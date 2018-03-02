@@ -1,0 +1,83 @@
+{
+  "minMcmVersion": 2,
+  "modName": "CraftingHighlightFix",
+  "displayName": "Crafting Highlight Fix",
+  "content": [
+    {
+      "text": "<font size='30'><p align='center'>Crafting Highlight Fix</p></font>",
+      "html": true,
+      "type": "text"
+    },
+    {
+      "text": "About",
+      "type": "section"
+    },
+    {
+      "text": "Crafting Highlight Fix provides options to disable the highlights at workbenches.",
+      "type": "text"
+    },
+    { "type": "spacer" },
+    {
+      "text": "Options",
+      "type": "section"
+    },
+    {
+      "id": "bDisableCraftingHighlights:Main",
+      "text": "Disable Crafting Highlights",
+      "type": "switcher",
+      "help": "Controls whether highlights will be disabled at workbenches.",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+      },
+      "action": {
+        "type": "CallExternalFunction",
+        "plugin": "crafting_highlight_fix",
+        "function": "OnMCMSettingUpdate"
+      }
+    },
+    {
+      "id": "bDisableInventoryMenuHighlights:Main",
+      "text": "Disable Trade Menu Highlights",
+      "type": "switcher",
+      "help": "Controls whether highlights will be disabled in the trade/barter/container menu.",
+      "valueOptions": {
+        "sourceType": "ModSettingBool"
+      },
+      "action": {
+        "type": "CallExternalFunction",
+        "plugin": "crafting_highlight_fix",
+        "function": "OnMCMSettingUpdate"
+      }
+    },
+    {
+      "id": "iPowerArmorShaderMode:Main",
+      "text": "Power Armor Highlight Mode",
+      "type": "dropdown",
+      "help": "Controls the type of highlight used in the Power Armor station.",
+      "valueOptions": {
+        "sourceType": "ModSettingInt",
+        "options": ["Completely Off", "On (Vanilla)", "Outline Only"]
+      },
+      "action": {
+        "type": "CallExternalFunction",
+        "plugin": "crafting_highlight_fix",
+        "function": "OnMCMSettingUpdate"
+      }
+    },
+    {
+      "id": "iRobotWorkbenchShaderMode:Main",
+      "text": "Robot Workbench Highlight Mode",
+      "type": "dropdown",
+      "help": "Controls the type of highlight used in the robot workbench.",
+      "valueOptions": {
+        "sourceType": "ModSettingInt",
+        "options": ["Completely Off", "On (Vanilla)", "Outline Only"]
+      },
+      "action": {
+        "type": "CallExternalFunction",
+        "plugin": "crafting_highlight_fix",
+        "function": "OnMCMSettingUpdate"
+      }
+    }
+  ]
+}
