@@ -28,6 +28,7 @@ F4SEMessagingInterface *g_messaging = nullptr;
 //--------------------
 
 RVA <uintptr_t> ApplyImageSpaceShader_Check ({
+    { RUNTIME_VERSION_1_10_75, 0x00BEBE03 },
     { RUNTIME_VERSION_1_10_64, 0x00BEBE43 },
     { RUNTIME_VERSION_1_10_50, 0x00BEBA23 },
     { RUNTIME_VERSION_1_10_40, 0x00BEB963 },
@@ -35,6 +36,7 @@ RVA <uintptr_t> ApplyImageSpaceShader_Check ({
 }, "74 1A 8B 83 ? ? ? ? 85 C0");
 
 RVA <uintptr_t> PowerArmorModMenu_StartHighlight_Check ({
+    { RUNTIME_VERSION_1_10_75, 0x00BA3491 },
     { RUNTIME_VERSION_1_10_64, 0x00BA34D1 },
     { RUNTIME_VERSION_1_10_50, 0x00BA30B1 },
     { RUNTIME_VERSION_1_10_40, 0x00BA30B1 },
@@ -42,6 +44,7 @@ RVA <uintptr_t> PowerArmorModMenu_StartHighlight_Check ({
 }, "FF 52 20 48 85 C0 74 17", 0x6);
 
 RVA <uintptr_t> InventoryMenu_SetEffectType ({
+    { RUNTIME_VERSION_1_10_75, 0x00B09D59 },
     { RUNTIME_VERSION_1_10_64, 0x00B09D59 },
     { RUNTIME_VERSION_1_10_50, 0x00B09D59 },
     { RUNTIME_VERSION_1_10_40, 0x00B09D59 },
@@ -49,6 +52,7 @@ RVA <uintptr_t> InventoryMenu_SetEffectType ({
 }, "BA ? ? ? ? 48 8B CB E8 ? ? ? ? B2 01");    // mov edx, 5
 
 RVA <float> ShaderBurstAmount ({
+    { RUNTIME_VERSION_1_10_75, 0x0675A710 },
     { RUNTIME_VERSION_1_10_64, 0x0675A710 },
     { RUNTIME_VERSION_1_10_50, 0x06759710 },
     { RUNTIME_VERSION_1_10_40, 0x0675B710 },
