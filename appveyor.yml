@@ -13,5 +13,5 @@ build_script:
   - python build.py
   
 artifacts:
-  - path: build\x64\Release\crafting_highlight_fix.dll
-    name: Crafting Highlight Fix
+  - path: build\x64\Release\*.dll
+  - path: build\*.zip
