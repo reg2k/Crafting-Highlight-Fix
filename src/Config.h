@@ -4,8 +4,8 @@
 //-----------------------
 // Plugin Information
 //-----------------------
-#define PLUGIN_VERSION              7
-#define PLUGIN_VERSION_STRING       "1.6"
+#define PLUGIN_VERSION              8
+#define PLUGIN_VERSION_STRING       "1.7"
 #define PLUGIN_NAME_SHORT           "crafting_highlight_fix"
 #define PLUGIN_NAME_LONG            "Crafting Highlight Fix"
 #define SUPPORTED_RUNTIME_VERSION   CURRENT_RELEASE_RUNTIME
